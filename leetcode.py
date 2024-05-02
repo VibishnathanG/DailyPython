@@ -170,13 +170,15 @@ class Solution:
 
 class Solution:
     def isValid(self, s: str) -> bool:
-        c_list= [*s]
-        if c_list.count("(") == c_list.count(")") and c_list.count("{") == c_list.count("}") and c_list.count("[") == c_list.count("]") :
-            return True
-        else:
-            return False
-
-
+        stack = []
+        character = {')': '(', '}': '{', ']': '['}
+        for char in s:
+            if char in character.values():
+                stack.append(char)
+            elif char in character:
+                if not stack or stack.pop() != character[char]:
+                    return False
+        return not stack
 
 # --------------------------------------------------------------------------------------
 
