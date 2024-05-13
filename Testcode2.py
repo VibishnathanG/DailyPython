@@ -1,14 +1,6 @@
-s="{}[]()}{"
+list1 = [1,2,4]
+list2 = [1,3,4]
+# Output: [1,1,2,3,4,4]
 
-c_list= [*s]
-
-
-
-if c_list.count("(") == c_list.count(")") and c_list.count("{") == c_list.count("}") and c_list.count("[") == c_list.count("]") :
-    print("yes")
-else:
-
-    print("No")
-
-
-
+main_l=sorted(list1 + list2)
+print(main_l)
