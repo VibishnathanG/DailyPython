@@ -52,3 +52,35 @@
 # a=int(input("Enter n: "))
 # b= ("%i + %i%i + %i%i%i" % (a,a,a,a,a,a)).split("+")
 # print(sum(int(ele) for ele in b))
+
+#11
+
+# print(abs.__doc__)
+
+#12
+
+# import calendar
+
+# print(calendar.month(2024, 10))
+
+#13
+
+# print('''a string that you "don't" have to escape
+# This
+# is a ....... multi-line
+# heredoc string --------> example''')
+
+#14
+
+# from datetime import date
+
+# f_Date=date(2014, 7, 2)
+# l_date=date(2014, 7, 11)
+
+# print(abs((f_Date-l_date).days))
+
+#15
+
+# r=6
+
+# print((4.0/3.0)*(3.1415926535897931)*(r**3))
