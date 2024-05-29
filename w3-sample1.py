@@ -84,3 +84,42 @@
 # r=6
 
 # print((4.0/3.0)*(3.1415926535897931)*(r**3))
+
+
+#16
+
+# a=int(input("Enter The Number: "))
+
+# if a>=17:
+#     print((a-17)*2)
+# else:
+#     print(17-a)
+
+
+#17
+# def threetimes(k):
+#     return k*3
+
+# a=input("Enter 3 Items with spaces: ").split(" ")
+
+# a= [int(a) for a in a]
+
+# for i in a:
+#     for j in range(0, len(a)):
+#         if i==a[j]:
+#             identical=True
+#         else:
+#             identical=False
+#             break
+        
+
+# if identical==False:
+#     print(sum(a))
+# else:
+#     b= list(map(threetimes, a))
+#     print(sum(b))
+
+#18
+
+# n=int(input("Enter : "))
+# print(True if abs(n-1000)<=100 or abs(n-2000)<=100 else False)
