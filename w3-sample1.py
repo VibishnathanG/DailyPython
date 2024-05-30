@@ -123,3 +123,94 @@
 
 # n=int(input("Enter : "))
 # print(True if abs(n-1000)<=100 or abs(n-2000)<=100 else False)
+
+#19
+
+# s=input("Enter your string: ")
+
+# if s[0:2].upper()=="IS":
+#     print(s)
+# else:
+#     print("is "+s)
+
+
+#20
+
+# a=input("Enter the String: ")
+# n=int(input("Enter Times: "))
+
+
+# print(a*n)
+
+#21
+
+# import random
+
+# c=["Shit again", "Yep", "Yaar again "]
+
+# def odd_or_even(n):
+#     try:
+#         if n%2 == 0:
+#             return f"{random.choice(c)} the Number is Even"
+#         elif n <0:
+#             raise ValueError("The enter value is Negative")
+#         else:
+#             return "Entered Number is Odd"
+
+#     except ValueError as error:
+#         return error
+
+# count=0
+# while True:
+#     count+=1
+#     n=int(input("Enter The number: "))
+#     if n==0:
+#         print("Dont Enter Zero")
+#     elif count==5:
+#         break
+#     else:
+#         print(odd_or_even(n))
+
+
+#22
+
+
+# a=input("Enter the List items with spaces: ").split(" ")
+
+# a=[int(a) for a in a]
+
+# count = 0
+
+# for i in a:
+#     if i == 4:
+#         count+=1
+#     else:
+#         continue
+
+# print(count)
+
+
+#23
+
+# strg=input("Enter the String: ")
+# n=int(input("Enter the Tines of Copy; "))
+
+# if len(strg) <= 2:
+#     print(strg*n)
+
+# else:
+#     print(strg[:2]*n)
+
+
+# #24
+
+# vowels=("a", "e", "i", "o", "u")
+# s=input("Enter the Char: ")
+# print("Yes Vowel") if s in vowels else print("Not Vowel")
+
+
+#25
+
+# test_Data=range(1,10)
+# sample_Data=int(input("Enter The Test Number: "))
+# print(True) if sample_Data in test_Data else print(False)
