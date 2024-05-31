@@ -214,3 +214,72 @@
 # test_Data=range(1,10)
 # sample_Data=int(input("Enter The Test Number: "))
 # print(True) if sample_Data in test_Data else print(False)
+
+
+#26
+
+# char=input("Enter: ")
+# Row_count=map(int, input("Enter the Row Count with space: ").split(" "))
+# Row_count=list(Row_count)
+
+# for i in Row_count:
+#     print(char*i)
+
+
+#27
+
+# input_list=input("Enter the List: ").split(" ")
+
+# string=""
+# for i in input_list:
+#     string+=i
+
+# print(string)
+
+
+#28
+
+# numbers = [    
+#     386, 462, 47, 237, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 
+#     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 
+#     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
+#     958,743, 527
+#     ]
+
+# for i in numbers:
+#     if i != 237:
+#         print(i) 
+#     else: 
+#         break 
+        
+
+#29
+
+# color_list_1 = set(["White", "Black", "Red"])
+# color_list_2 = set(["Red", "Green"])
+
+# print(color_list_1.difference(color_list_2))
+
+
+#30
+
+
+# def triangle(base: float = 0.0, height: float = 0.0) -> float:
+#   if base < 0 or height < 0:
+#       raise ValueError("Base and height must be non-negative values.")
+#   return 0.5 * base * height
+
+
+# while True:
+#   try:
+#     base = float(input("Enter the base of the triangle: "))
+#     height = float(input("Enter the height of the triangle: "))
+#     area = triangle(base, height)
+#     if area is not None:
+#       print(f"The area of the triangle is: {area:.2f}")
+#   except ValueError as e:
+#     print("Invalid input:", e)
+#   except KeyboardInterrupt:
+#     print("Exiting...")
+#     break
+
