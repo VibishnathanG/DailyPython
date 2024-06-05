@@ -1,6 +1,7 @@
 # 1
 
 # print ("Twinkle, twinkle, little star,\n\tHow I wonder what you are!\n\t\tUp above the world so high,\n\t\tLike a diamond in the sky.\n\sTwinkl0e, twinkle, little star,\n\tHow I wonder what you are")
+# print ("Twinkle, twinkle, little star,\n\tHow I wonder what you are!\n\t\tUp above the world so high,\n\t\tLike a diamond in the sky.\n\sTwinkl0e, twinkle, little star,\n\tHow I wonder what you are")
 
 # 2
 
@@ -28,28 +29,39 @@
 #6
 
 # a= input("Enter Comma Separated Word: ").split(",")
+# a= input("Enter Comma Separated Word: ").split(",")
 
 # print(a)
+# print(a)
+# print(tuple(a))
 # print(tuple(a))
 
 #7
 
 # a= input("Enter File Name: ")
+# a= input("Enter File Name: ")
+# print(a.split(".")[-1])
 # print(a.split(".")[-1])
 
 #8
 
 # a=input("Enter Space Separeted Colour: ").split(" ")
+# a=input("Enter Space Separeted Colour: ").split(" ")
+# print("First Element: "+a[0]+"\n"+"Last Element: " + a[-1])
 # print("First Element: "+a[0]+"\n"+"Last Element: " + a[-1])
 
 #9
 
 # a=(11, 12, 2014)
+# a=(11, 12, 2014)
+# print("Exam Date is : %i / %i / %i " % a )
 # print("Exam Date is : %i / %i / %i " % a )
 
 #10
 
 # a=int(input("Enter n: "))
+# a=int(input("Enter n: "))
+# b= ("%i + %i%i + %i%i%i" % (a,a,a,a,a,a)).split("+")
 # b= ("%i + %i%i + %i%i%i" % (a,a,a,a,a,a)).split("+")
 # print(sum(int(ele) for ele in b))
 
@@ -66,7 +78,9 @@
 #13
 
 # print('''a string that you "don't" have to escape
+# print('''a string that you "don't" have to escape
 # This
+# is a ....... multi-line
 # is a ....... multi-line
 # heredoc string --------> example''')
 
@@ -89,10 +103,14 @@
 #16
 
 # a=int(input("Enter The Number: "))
+# a=int(input("Enter The Number: "))
 
 # if a>=17:
+# if a>=17:
+#     print((a-17)*2)
 #     print((a-17)*2)
 # else:
+#     print(17-a)
 #     print(17-a)
 
 
@@ -101,10 +119,14 @@
 #     return k*3
 
 # a=input("Enter 3 Items with spaces: ").split(" ")
+# a=input("Enter 3 Items with spaces: ").split(" ")
 
+# a= [int(a) for a in a]
 # a= [int(a) for a in a]
 
 # for i in a:
+# for i in a:
+#     for j in range(0, len(a)):
 #     for j in range(0, len(a)):
 #         if i==a[j]:
 #             identical=True
@@ -115,7 +137,9 @@
 
 # if identical==False:
 #     print(sum(a))
+#     print(sum(a))
 # else:
+#     b= list(map(threetimes, a))
 #     b= list(map(threetimes, a))
 #     print(sum(b))
 
@@ -137,9 +161,11 @@
 #20
 
 # a=input("Enter the String: ")
+# a=input("Enter the String: ")
 # n=int(input("Enter Times: "))
 
 
+# print(a*n)
 # print(a*n)
 
 #21
@@ -176,11 +202,14 @@
 
 
 # a=input("Enter the List items with spaces: ").split(" ")
+# a=input("Enter the List items with spaces: ").split(" ")
 
+# a=[int(a) for a in a]
 # a=[int(a) for a in a]
 
 # count = 0
 
+# for i in a:
 # for i in a:
 #     if i == 4:
 #         count+=1
@@ -204,6 +233,7 @@
 
 # #24
 
+# vowels=("a", "e", "i", "o", "u")
 # vowels=("a", "e", "i", "o", "u")
 # s=input("Enter the Char: ")
 # print("Yes Vowel") if s in vowels else print("Not Vowel")
@@ -282,4 +312,63 @@
 #   except KeyboardInterrupt:
 #     print("Exiting...")
 #     break
+
+#31
+
+
+# import time
+
+# # Start time
+# start_time = time.time()
+
+# # Input numbers
+# a = int(input("Enter Number A: "))
+# b = int(input("Enter Number B: "))
+
+# # Find divisors of a
+# divisor_of_a = []
+# for i in range(2, a // 2 + 1):
+#     if a % i == 0:
+#         divisor_of_a.append(i)
+
+# # Find divisors of b
+# divisor_of_b = []
+# for j in range(2, b // 2 + 1):
+#     if b % j == 0:
+#         divisor_of_b.append(j)
+
+# # Find common divisors and get the maximum
+# max_set = set(divisor_of_b).intersection(set(divisor_of_a))
+# max_value = list(max_set).pop()
+
+# # Print the result
+# print(f"GCD: {max_value}")
+
+# # End time
+# end_time = time.time()
+
+# # Print execution time
+# print(f"Execution Time: {end_time - start_time} seconds")
+
+#32
+
+# Input numbers
+# a = int(input("Enter Number A: "))
+# b = int(input("Enter Number B: "))
+
+# if a>b:
+#     c=a
+# else:
+#     c=b
+
+# while 1:
+#     if (c%a==0) and (c%b==0):
+#         lcm=c
+#         break
+#     else:
+#         c+=1
+
+# print(lcm)
+
+#33
 
