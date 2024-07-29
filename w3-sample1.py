@@ -372,3 +372,13 @@
 
 #33
 
+# a=int(input("Enter A: "))
+# b=int(input("Enter B: "))
+# c=int(input("Enter C: "))
+
+
+# if a == b or a == c or c ==b:
+#     print(0)
+
+# else:
+#     print(a+b+c)
