@@ -382,3 +382,46 @@
 
 # else:
 #     print(a+b+c)
+
+#34
+
+# try:
+#     a=int(input("Enter A: "))
+#     b=int(input("Enter B: "))
+
+# except ValueError as v:
+#     print("Please Enter Number")
+
+# else:
+#     if a+b <= 20 and a+b>=15:
+#         print(20)
+
+#     else:
+#         print(a+b) 
+
+#35
+# a=int(input("Enter A: "))
+# b=int(input("Enter B: "))
+
+# if a==b or abs(a-b)==5 or abs(a+b)==5:
+#     print(True)
+# else:
+#     print(a+b)
+
+#36
+
+# try:
+#     a= int(input("Enter Obj 1: "))
+#     b= int(input("Enter Obj 2: "))
+
+# except ValueError as t:
+
+#     print("Entered is not a Int")
+
+# else:
+
+#     if type(a)==int and type(b)==int:
+#         print(a+b)
+
+#     else:
+#         print("Unsupported Type")
