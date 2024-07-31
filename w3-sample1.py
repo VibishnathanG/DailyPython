@@ -425,3 +425,9 @@
 
 #     else:
 #         print("Unsupported Type")
+
+
+#37
+
+name=input("Enter Name: ")
+age=input("Enter age: ")
