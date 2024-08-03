@@ -429,5 +429,33 @@
 
 #37
 
-name=input("Enter Name: ")
-age=input("Enter age: ")
+# name=input("Enter Name: ")
+# age=input("Enter age: ")
+# address=input("Enter Adress: ")
+
+# print(f"{name}\n{age}\n{address}")
+
+
+#38
+
+# x = 4
+# y = 3
+# print((x + y) * (x + y))
+
+#39
+
+# amt = 10000
+# int = 3.5
+# years = 7
+
+# print(amt*((1+(0.01*int)) ** years))
+
+#40
+
+# import math
+# x1=1
+# y1=2
+# x2=4
+# y2=5
+
+# print(math.sqrt((pow((x2-x1),2) + pow((y2-y1),2))))
