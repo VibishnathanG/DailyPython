@@ -459,3 +459,41 @@
 # y2=5
 
 # print(math.sqrt((pow((x2-x1),2) + pow((y2-y1),2))))
+
+#41
+
+# import os,sys
+
+# file=input("Enter Name: ")
+
+# print(True if os.path.isfile(file) else False)
+
+
+#42
+
+# import struct,platform
+# print(struct.calcsize("P") * 8)
+# print(platform.architecture())
+
+
+#43
+
+# import os, platform
+
+# print("Name of the operating system:", os.name)
+
+# print("\nName of the OS system:", platform.system())
+
+# print("\nVersion of the operating system:", platform.release())
+
+#44
+# import site
+# print(site.getsitepackages())
+
+
+
+#45
+
+# import subprocess
+
+# subprocess.call(["ls", "-l"])
