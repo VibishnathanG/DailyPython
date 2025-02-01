@@ -243,7 +243,3 @@ a= range(11,19)
 # except StopIteration:
 #     pass
 
-
-b="vibish"
-for i in b:
-    print(i)
