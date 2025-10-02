@@ -1,9 +1,32 @@
-from turtle import Turtle, Screen
-import random, time
-from simple_projects.snake_game.main import main
 
 
 
+import sys
+import os
+
+def main():
+    while True:
+        sys.stdout.write("$ ")
+        sys.stdout.flush()
+        
+        command = input().strip()
+        
+        if command == "exit":
+            break
+        elif command.startswith("echo "):
+            print(command[5:])
+        elif command == "pwd":
+            print(os.getcwd())
+        elif command.startswith("cd "):
+            try:
+                os.chdir(command[3:])
+            except:
+                print(f"cd: {command[3:]}: No such file or directory")
+        elif command:
+            print(f"{command}: command not found")
+
+if __name__ == "__main__":
+    main()
 
 
 
