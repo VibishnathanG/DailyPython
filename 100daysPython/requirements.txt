@@ -1,2 +1,5 @@
 turtle
 random
+tkinter
+pandas
+numpy

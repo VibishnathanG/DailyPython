@@ -1,4 +1,4 @@
-#!/mnt/e/Upskill_Main/Main_Workspace/Programming/Python/workspace/100daysPython/myenv/bin/python
+#!/mnt/e/Upskill_Main/Main_Workspace/Programming/Python/workspace/DailyPython/100daysPython/myenv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

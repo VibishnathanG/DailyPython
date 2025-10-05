@@ -1,32 +1,75 @@
 
+import tkinter as tk
+
+def countdown():
+    global t
+    if t > 0:
+        mins, secs = divmod(t, 60)
+        label.config(text=f'{mins:02d}:{secs:02d}')
+        t -= 1
+        root.after(1000, countdown)  # Schedule next update
+    
+root = tk.Tk()
+label = tk.Label(root, text="05:00")
+label.pack()
+t = 300
+countdown()
+root.mainloop()
 
 
-import sys
-import os
+# import tkinter
 
-def main():
-    while True:
-        sys.stdout.write("$ ")
-        sys.stdout.flush()
+# window = tkinter.Tk()
+# window.title("My First GUI Program")
+# window.minsize(width=500, height=300)
+# window.config(padx=20, pady=20)
+# # label
+# my_label = tkinter.Label(text="I am a Label", font=("Arial", 24))
+# my_label["text"] = "New Text"
+# my_label.config(text="New Text")
+# my_label.grid(column=0, row=0)
+# my_label.config(padx=50, pady=50)
+# # button
+# def button_clicked():
+#     print("I got clicked")
+#     new_text = input.get()
+#     my_label.config(text=new_text)
+    
+# button = tkinter.Button(text="Click Me", command=button_clicked)
+# button.grid(column=1, row=1)
+# # entry
+# input = tkinter.Entry(width=10)
+# input.grid(column=2, row=2)
+# print(input.get())
+# text
+
+
+# import sys
+# import os
+
+# def main():
+#     while True:
+#         sys.stdout.write("$ ")
+#         sys.stdout.flush()
         
-        command = input().strip()
+#         command = input().strip()
         
-        if command == "exit":
-            break
-        elif command.startswith("echo "):
-            print(command[5:])
-        elif command == "pwd":
-            print(os.getcwd())
-        elif command.startswith("cd "):
-            try:
-                os.chdir(command[3:])
-            except:
-                print(f"cd: {command[3:]}: No such file or directory")
-        elif command:
-            print(f"{command}: command not found")
+#         if command == "exit":
+#             break
+#         elif command.startswith("echo "):
+#             print(command[5:])
+#         elif command == "pwd":
+#             print(os.getcwd())
+#         elif command.startswith("cd "):
+#             try:
+#                 os.chdir(command[3:])
+#             except:
+#                 print(f"cd: {command[3:]}: No such file or directory")
+#         elif command:
+#             print(f"{command}: command not found")
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 
 

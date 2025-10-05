@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /mnt/e/Upskill_Main/Main_Workspace/Programming/Python/workspace/100daysPython/myenv
+set -gx VIRTUAL_ENV /mnt/e/Upskill_Main/Main_Workspace/Programming/Python/workspace/DailyPython/100daysPython/myenv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

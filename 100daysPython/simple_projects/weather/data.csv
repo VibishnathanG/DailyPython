@@ -1,4 +1,4 @@
-Duration,Pulse,Maxpulse,Calories,PatientID,VisitDate,BloodPressure,Temperature,SpO2,Diagnosis
+q!Duration,Pulse,Maxpulse,Calories,PatientID,VisitDate,BloodPressure,Temperature,SpO2,Diagnosis
 60,110,130,409.1,John Smith,2024-01-01,120/80,98.6,99,Healthy
 60,117,145,479.0,Mary Jones,2024-01-01,118/75,98.4,98,Healthy
 60,103,135,340.0,Bob Wilson,2024-01-01,125/82,101.2,92,Fever
